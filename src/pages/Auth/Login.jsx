@@ -9,6 +9,7 @@ import { TextArea } from "@/components/base/textarea/textarea";
 import countries, { phoneCodeOptions } from "@/utils/countries";
 const Login = () => {
    const [selectedCountryPhone, setSelectedCountryPhone] = useState("US");
+//    throw new "error"
   return (
      <section className="bg-primary py-16 md:py-24">
         <div className="mx-auto max-w-container px-4 md:px-8">
