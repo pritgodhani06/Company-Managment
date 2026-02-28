@@ -1,13 +1,13 @@
+import LoginLayout from "@/Layouts/LoginLauout/LoginLayout";
+import Login from "@/pages/Auth/Login";
 import * as React from "react"; 
 import { Routes, Route } from "react-router-dom";
-import LoginLayout from "../Layouts/LoginLayout";
-import { HomeScreen } from "../pages/home-screen";
 
 const RootRouters = () => {
   return (  
       <Routes>
         <Route element={<LoginLayout />}>
-          <Route path="/" element={<HomeScreen />} />
+          <Route path="/" element={<Login />} />
         </Route>
       </Routes>
   );

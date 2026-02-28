@@ -33,8 +33,8 @@ await mongoose
   .connect("mongodb://localhost:27017")
   .then(() => {
     console.log("mongoes connect successfully");
-    app.listen(5001, async () => {
-      console.log("running port:", 5001);
+    app.listen(6001, async () => {
+      console.log("running port:", 6001);
     });
   })
   .catch((err) => {
