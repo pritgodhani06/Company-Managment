@@ -6,6 +6,7 @@ import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
 import { UntitledLogoMinimal } from "@/components/foundations/logo/untitledui-logo-minimal";
 import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
 import { cx } from "@/utils/cx";
+import { ThemeToggle } from "@/components/base/ThemeToggle/ThemeToggle";
 const headerNavItems = [{
   label: "Products",
   href: "/products",
@@ -133,7 +134,8 @@ export const Header = ({
                         </nav>
                     </div>
 
-                    <div className="hidden items-center gap-3 md:flex">
+                    <div className="hidden items-center gap-3 md:flex">                        
+                        <ThemeToggle />
                         <Button color="secondary" size={isFloating ? "md" : "lg"}>
                             Log in
                         </Button>
